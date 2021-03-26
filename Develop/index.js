@@ -17,10 +17,9 @@ const fs = require('fs');
 const util = require('util');
 // const licenses = [["MIT", "MIT", "MIT"], ["ISC", "ISC", "ISC"], ["IBM", "IPL%201.0", "IPL-1.0"]];
 
-// create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const promptUser = () => {
+function promptUser() {
   return inquirer.prompt([
     {
       type: 'input',
@@ -69,7 +68,7 @@ const promptUser = () => {
       message: 'Enter your email address.',
     },
   ]);
-};
+}
 
 const generateREADME = (answers) =>
 `
@@ -108,12 +107,17 @@ ${answers.test}
 Feel free to reach out to me by [email](mailto:${answers.email}) with any questions you may have.
 `;
 
-// Bonus using writeFileAsync as a promise
-const init = () => {
+function init() {
   promptUser()
-    .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
-    .then(() => console.log('Successfully wrote to README.md'))
-    .catch((err) => console.error(err));
+    .then(function(answers) {
+        writeFileAsync('README.md', generateREADME(answers));
+    })
+    .then(function() {
+        console.log('Successfully wrote to README.md');
+    })
+    .catch(function(err) {
+        console.error(err);
+    });
 };
 
 init();
