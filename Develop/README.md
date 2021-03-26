@@ -1,5 +1,7 @@
 
-# asdf
+# sadf
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 asdf
@@ -19,7 +21,7 @@ asdf
 asdf
 
 ## License
-asdf
+MIT
 
 ## Contributions
 asdf
@@ -29,4 +31,4 @@ asdf
 
 ## Questions
 [GitHub](https://github.com/asdf)  
-Feel free to reach out to me by [email](mailto:sadf) with any questions you may have.
+Feel free to reach out to me by [email](mailto:asdf) with any questions you may have.

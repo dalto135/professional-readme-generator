@@ -15,6 +15,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+// const licenses = [["MIT", "MIT", "MIT"], ["ISC", "ISC", "ISC"], ["IBM", "IPL%201.0", "IPL-1.0"]];
 
 // create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -52,9 +53,10 @@ const promptUser = () => {
       message: 'What tests will you provide and how should they be used?',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'What license are you using?',
+      choices: ["MIT", "ISC"],
     },
     {
       type: 'input',
@@ -72,6 +74,8 @@ const promptUser = () => {
 const generateREADME = (answers) =>
 `
 # ${answers.title}
+
+[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
 ## Description
 ${answers.description}
