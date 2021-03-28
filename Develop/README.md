@@ -1,10 +1,10 @@
 
-# b
+# portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-b
+A websitedisplaying my skills
 
 ## Table of Contents
 [Installation](#Installation)  
@@ -15,20 +15,20 @@ b
 [Questions](#Questions)
 
 ## Installation
-b
+clone repo
 
 ## Usage
-b
+Click links to see my projects
 
 ## License
 MIT
 
 ## Contributions
-b
+Anyone may access the repo and make changes
 
 ## Testing
-b
+No tests
 
 ## Questions
-[GitHub](https://github.com/b)  
-Feel free to reach out to me by [email](mailto:b) with any questions you may have.
+[GitHub](https://github.com/dalto135)  
+Feel free to reach out to me by [email](mailto:wilkins.271@osu.edu) with any questions you may have.
