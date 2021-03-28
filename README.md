@@ -20,7 +20,7 @@ An app that uses Node.js to take information from the user to produce a professi
 ![Screenshot 1](images/screenshot.png)
 
 ## Video
-https://drive.google.com/file/d/1xf-MWEYw272LeOLWWB3GVT3qa4BWIgKK/view
+[Link](https://drive.google.com/file/d/1xf-MWEYw272LeOLWWB3GVT3qa4BWIgKK/view)
 
 ## License
 MIT
