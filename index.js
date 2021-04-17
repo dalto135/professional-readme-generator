@@ -97,7 +97,7 @@ Feel free to reach out to me by [email](mailto:${answers.email}) with any questi
 function init() {
   promptUser()
     .then(function(answers) {
-        writeFileAsync('README.md', generateREADME(answers));
+        writeFileAsync('Assets/README.md', generateREADME(answers));
     })
     .then(function() {
         console.log('Successfully wrote to README.md');
