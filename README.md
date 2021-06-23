@@ -26,4 +26,4 @@ An app that uses Node.js to take information from the user to produce a professi
 MIT
 
 ## Contact
-Dalton Wilkins - wilkins.271@osu.edu
+Dalton Wilkins - daltongh@gmail.com
